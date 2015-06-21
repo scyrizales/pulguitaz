@@ -57,7 +57,7 @@ pipes.builtAppScriptsProd = function() {
     return gulp.src(paths.scripts)
         .pipe(pipes.orderedAppScripts())
         .pipe(plugins.concat('app.min.' + paths.cacheBuster + '.js'))
-        //.pipe(plugins.uglify())
+        .pipe(plugins.uglify())
         .pipe(gulp.dest(paths.distScriptsProd));
 };
 
