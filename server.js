@@ -17,7 +17,7 @@ app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-M
 app.use(express.static(__dirname + '/' + staticdir)); // set the static files location /public/img will be /img for users
 
 // configuration ===========================================
-//mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
+mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
 
 // models ==================================================
 var models = require('./devServer/models')(mongoose); // configure our models

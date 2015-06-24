@@ -2,10 +2,13 @@
  * Created by scastillo on 6/24/15.
  */
 module.exports = function (mongoose) {
-    /*return {
-        Subscription: mongoose.model('Subscription', {
+    var schema = {
+        Subscription: mongoose.schema({
             email: String,
             key: String
         })
-    }*/
+    };
+    return {
+        Subscription: mongoose.model('Subscription', schema.Subscription)
+    }
 };
