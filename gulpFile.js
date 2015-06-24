@@ -84,7 +84,7 @@ pipes.builtPartialsProd = function() {
     return gulp.src(paths.partials)
         .pipe(plugins.htmlmin({collapseWhitespace: true, removeComments: true}))
         .pipe(plugins.ngHtml2js({
-            moduleName: "Winnin",
+            moduleName: "pulguitaz",
             prefix: "views/"
         }))
         .pipe(plugins.concat('templates.min.' + paths.cacheBuster + '.js'))

@@ -25,7 +25,7 @@ var models = require('./devServer/models')(mongoose); // configure our models
 // routes ==================================================
 require('./devServer/routes')(app, models); // configure our routes
 app.all('/*', function(req, res) {
-    res.sendfile(__dirname + '/' + staticdir + '/' + 'index.html');
+    res.sendFile(__dirname + '/' + staticdir + '/' + 'index.html');
 });
 
 // start app ===============================================
