@@ -7,13 +7,13 @@ angular.module("pulguitaz").config(["$locationProvider", "$stateProvider", "$url
             name: "subscribe",
             url: "/subscribe",
             controller: "SubscribeCtrl",
-            templateUrl: "views/main/subscribe.html"
+            templateUrl: "/views/main/subscribe.html"
         })
         .state({
             name: "confirm",
             url: "/confirm",
             controller: "ConfirmCtrl",
-            templateUrl: "views/main/confirm.html"
+            templateUrl: "/views/main/confirm.html"
         });
 
     $urlRouterProvider.otherwise('/subscribe');
